@@ -1,0 +1,32 @@
+#ここでベース環境指定
+#dockerはdockerhubからベースとなるimageを指定
+Bootstrap: docker
+    From: nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
+#環境変数設定
+%environment
+    export LC_ALL=C
+    #export LD_LIBRARY_PATH=/usr/local/cuda/lib64
+
+#インストールするものを記述
+%post
+    #ln -s /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+    #apt
+    apt -y update
+    apt -y full-upgrade
+    apt install -y python3
+    apt install -y python3-pip
+    apt install -y ffmpeg
+
+    #pip
+    pip3 install torch==1.4.0
+    pip3 install torchvision==0.5.0
+    pip3 install numpy
+    pip3 install scipy
+    pip3 install future
+    pip3 install visdom
+    pip3 install pyyaml
+
+%labels
+    Author Nahuel
+    Version v1.0.0
+    Date April 19th, 2020
