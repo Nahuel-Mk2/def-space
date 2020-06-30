@@ -1,3 +1,6 @@
+# reference
+# https://github.com/dragen1860/pytorch-mnist-vae
+
 #ここでベース環境指定
 #dockerはdockerhubからベースとなるimageを指定
 #cuda9.0&cudnn7固定
