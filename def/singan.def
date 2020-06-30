@@ -1,5 +1,5 @@
 # reference
-# github:https://github.com/tamarott/SinGAN
+# https://github.com/tamarott/SinGAN
 
 #ここでベース環境指定
 #dockerはdockerhubからベースとなるimageを指定
