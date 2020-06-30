@@ -1,3 +1,6 @@
+# reference
+# https://github.com/imatge-upc/wav2pix
+
 #ここでベース環境指定
 #dockerはdockerhubからベースとなるimageを指定
 Bootstrap: docker
