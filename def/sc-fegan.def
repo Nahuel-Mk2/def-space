@@ -1,3 +1,6 @@
+# reference
+# https://github.com/run-youngjoo/SC-FEGAN
+
 #ここでベース環境指定
 #dockerはdockerhubからベースとなるimageを指定
 Bootstrap: docker
