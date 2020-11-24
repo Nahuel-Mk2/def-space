@@ -28,6 +28,7 @@ Bootstrap: docker
     pip3 install matplotlib
     pip3 install scipy
     pip3 install opencv-python==3.4.0.12
+    
 %labels
     Author Nahuel
     Version v1.0.0
