@@ -10,13 +10,12 @@ Bootstrap: docker
     export LC_ALL=C
 
 ### Attention! ###
-### python3.6 or later Don't include tkinter
-### https://packages.ubuntu.com/ja/xenial/python3-tk
+### python3.6 or later may not include tkinter
 
 ### issue solution ###
 ### 1. you must build sandbox
 ### 2. please type the following code in [sudo singularity shell --writable hogehoge_box]
-#apt install -y python3-tk
+###    apt install -y python3-tk
 ### 3. after that you can build sif
 
 ##################
